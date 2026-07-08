@@ -2,8 +2,8 @@
 #include <vector>
 #include <set>
 using namespace std;
+set<vector<int>> s;                                  
 void getAllCombinations(vector<int>& candidates,int idx,int target,vector<vector<int>>& ans,vector<int>& combine){
-    set<vector<int>> s;                                  
     if(idx==candidates.size() || target<0) return;
         if(target==0){
             if(s.find({combine})==s.end()){
