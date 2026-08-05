@@ -32,7 +32,7 @@ Node *insert(Node *root, int val)
     return root;
 }
 
-Node *getInorderSuccessor(Node *root)
+Node* getInorderSuccessor(Node *root)
 { // leftmost node in right subtree
     while (root != NULL && root->left != NULL)
     {
@@ -40,7 +40,8 @@ Node *getInorderSuccessor(Node *root)
     }
     return root;
 }
-Node *delNode(Node *root, int key)
+
+Node* delNode(Node *root, int key)
 {
     if (root == NULL)
     {
