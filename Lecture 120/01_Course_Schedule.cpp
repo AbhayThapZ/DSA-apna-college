@@ -59,7 +59,7 @@ int main() {
     int numCourses = 2;
 
     vector<vector<int>> prerequisites = {
-        {1, 0},{2,0},{3,1},{3,2}
+        {1,0},{2,0},{3,1},{3,2}
     };
 
     if (sol.canFinish(numCourses, prerequisites)) {
